@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿超 - 个人技术介绍</title>
+    <style>
+        /* 全局样式统一抽离，减少内联冗余 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", "Heiti SC", sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        /* 头部样式 */
+        .header {
+            background-color: #165DFF;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 0 0 12px 12px;
+            box-shadow: 0 2px 10px rgba(22, 93, 255, 0.15);
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 4px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .avatar:hover {
+            transform: scale(1.05); /* 头像悬浮放大 */
+        }
+
+        /* 主体内容样式 */
+        .main-content {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 3px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .title {
+            font-size: 24px;
+            color: #165DFF;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .info-section {
+            margin-bottom: 24px;
+        }
+
+        .info-title {
+            font-size: 18px;
+            color: #222;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .info-text {
+            font-size: 16px;
+            color: #444;
+            margin-bottom: 12px;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .tech-tag {
+            padding: 4px 12px;
+            background-color: #e8f3ff;
+            color: #165DFF;
+            border-radius: 16px;
+            font-size: 14px;
+        }
+
+        /* 底部样式 */
+        .footer {
+            background-color: #165DFF;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.9);
+            border-radius: 12px 12px 0 0;
+            margin-top: 20px;
+        }
+
+        .footer-link {
+            color: #fff;
+            text-decoration: none;
+            padding: 6px 16px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 8px;
+        }
+
+        .footer-link:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部区域 -->
+    <div class="header">
+        <!-- 注意：本地图片路径部署后无法访问，需替换为在线图床链接（如阿里云OSS/Imgur） -->
+        <img src="https://github.com/golangwu/re01-one/blob/main/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20251205220757_1_55.jpg?raw=true" 
+             alt="阿超个人头像" 
+             class="avatar">
+    </div>
+
+    <!-- 主体内容 -->
+    <div class="main-content">
+        <h1 class="title">阿超 - 技术个人介绍</h1>
+        
+        <!-- 基本信息模块 -->
+        <div class="info-section">
+            <h2 class="info-title">基本信息</h2>
+            <p class="info-text">姓名：阿超</p>
+            <p class="info-text">学历：专科</p>
+            <p class="info-text">专业：会计</p>
+        </div>
+
+        <!-- 技术能力模块 -->
+        <div class="info-section">
+            <h2 class="info-title">技术栈掌握</h2>
+            <p class="info-text">核心方向：Go后端开发</p>
+            <div class="tech-stack">
+                <span class="tech-tag">Go基础语法</span>
+                <span class="tech-tag">Gin框架</span>
+                <span class="tech-tag">GORM ORM</span>
+                <span class="tech-tag">HTTP接口开发</span>
+                <span class="tech-tag">并发编程</span>
+                <span class="tech-tag">MySQL操作</span>
+            </div>
+            <p class="info-text" style="margin-top: 12px;">基础能力：Python开发（基础语法、脚本编写）</p>
+        </div>
+
+        <!-- 个人简介模块 -->
+        <div class="info-section">
+            <h2 class="info-title">个人简介</h2>
+            <p class="info-text">非科班（会计专业）转行技术开发，专注Go后端技术栈学习与实践，具备扎实的Go基础语法和后端开发思维。</p>
+            <p class="info-text">掌握Python基础开发能力，能够编写简单脚本提升工作效率，具备跨语言的编程学习能力。</p>
+            <p class="info-text">致力于夯实后端开发基础，持续学习云原生、微服务等Go生态相关技术，目标成为一名优秀的Go后端开发工程师。</p>
+        </div>
+    </div>
+
+    <!-- 底部区域 -->
+    <div class="footer">
+        <p>© 2025 阿超 - Go后端开发学习之路</p>
+        <!-- 可替换为你的个人社交链接（如GitHub/Gitee/B站） -->
+        <a href="https://space.bilibili.com/3546891394484648?spm_id_from=333.788.0.0" class="footer-link">
+            我的B站学习空间
+        </a>
+    </div>
+</body>
+</html>
